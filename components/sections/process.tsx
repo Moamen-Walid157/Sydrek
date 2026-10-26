@@ -50,7 +50,7 @@ export function Process() {
   return (
     <section id="process" ref={root} className="relative">
       <div className="shell hidden min-h-[100svh] flex-col justify-center py-24 lg:flex">
-        <p className="font-mono text-[11px] tracking-[0.16em] text-[#22d3ee] uppercase">03 · Process</p>
+        <p className="font-mono text-[11px] tracking-[0.16em] text-[#22d3ee] uppercase">04 · Process</p>
         <div className="mt-6 grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <h2 className="font-display text-5xl tracking-[-0.04em] xl:text-6xl">Four movements. One system.</h2>
@@ -79,7 +79,7 @@ export function Process() {
       </div>
 
       <div className="shell py-20 lg:hidden">
-        <p className="font-mono text-[11px] tracking-[0.16em] text-[#2563ff] uppercase dark:text-[#22d3ee]">03 · Process</p>
+        <p className="font-mono text-[11px] tracking-[0.16em] text-[#2563ff] uppercase dark:text-[#22d3ee]">04 · Process</p>
         <h2 className="mt-3 font-display text-4xl tracking-[-0.04em]">Four movements. One system.</h2>
         <div className="mt-8 grid gap-4">
           {steps.map((step) => (

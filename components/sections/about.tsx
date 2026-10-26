@@ -7,9 +7,9 @@ import { motion } from "motion/react";
 import { ease } from "@/lib/utils";
 
 const stats = [
-  { value: 99.99, suffix: "%", digits: 2, label: "Uptime we design toward" },
-  { value: 14, suffix: "", digits: 0, label: "Regions a platform can span" },
-  { value: 84, suffix: "ms", digits: 0, label: "P95 we refuse to ignore" },
+  { value: 10, suffix: "", digits: 0, label: "Core services" },
+  { value: 50, suffix: "+", digits: 0, label: "Further capabilities" },
+  { value: 3, suffix: "", digits: 0, label: "Ways to start" },
 ];
 
 export function About() {
@@ -38,13 +38,13 @@ export function About() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease }}
         >
-          <p className="font-mono text-[11px] tracking-[0.16em] text-[#2563ff] uppercase dark:text-[#22d3ee]">05 · About</p>
+          <p className="font-mono text-[11px] tracking-[0.16em] text-[#2563ff] uppercase dark:text-[#22d3ee]">09 · About</p>
           <h2 className="mt-3 font-display text-4xl tracking-[-0.04em] md:text-6xl">A stable lattice. A live signal.</h2>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted">
-            The Sydrek mark is an S drawn as infrastructure. White arcs hold the structure. Blue arcs carry the live state. Two nodes stay in sync — the same standard we hold the software to.
+            The Sydrek mark is an S held between two chevrons. Silver carries the structure. Blue marks the direction. Two nodes stay in sync — the same standard we hold a website, a CRM, or an app to.
           </p>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-muted">
-            We work with technical buyers who want the system underneath the interface to be as considered as the glass on top of it.
+            We build the product people see and the system underneath it: sites, landing pages, CRMs, ERPs, dashboards, learning, content, and mobile.
           </p>
           <div ref={ref} className="mt-8 grid gap-3 sm:grid-cols-3">
             {stats.map((stat) => (
@@ -70,7 +70,7 @@ export function About() {
         >
           <Image
             src="/images/mark-full.jpg"
-            alt="The Sydrek signal mark, photographed up close on a dark field"
+            alt="The Sydrek mark: a silver S between white and blue chevrons on a navy field"
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="object-cover"

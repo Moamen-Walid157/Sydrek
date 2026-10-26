@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 321 198" width="321" height="198"><defs>
+ <clipPath id="sClip"><path d="M 331 173 L 396 173 L 371 211 L 324 211 C 314 211 313 219 322 223 L 384 253 C 399 261 406 272 406 288 C 406 316 388 337 360 337 L 294 337 L 317 299 L 370 299 C 378 299 383 294 376 289 L 312 257 C 296 249 289 238 289 222 C 289 194 305 173 331 173 Z"/></clipPath>
+ <linearGradient id="sBase" gradientUnits="userSpaceOnUse" x1="0" y1="173" x2="0" y2="337">
+  <stop offset="0" stop-color="#F3F6FC"/><stop offset="0.18" stop-color="#FBFCFE"/>
+  <stop offset="0.62" stop-color="#FFFFFF"/><stop offset="0.8" stop-color="#DCE8FB"/>
+  <stop offset="1" stop-color="#AFC8F5"/>
+ </linearGradient>
+ <radialGradient id="sBowlL" gradientUnits="userSpaceOnUse" cx="288" cy="230" r="36" gradientTransform="translate(288 230) scale(1 1.2) translate(-288 -230)">
+  <stop offset="0" stop-color="#7F93BF"/><stop offset="0.5" stop-color="#A9B9D8" stop-opacity="0.85"/>
+  <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+ </radialGradient>
+ <radialGradient id="sBowlR" gradientUnits="userSpaceOnUse" cx="408" cy="296" r="32" gradientTransform="translate(408 296) scale(1 1.5) translate(-408 -296)">
+  <stop offset="0" stop-color="#8FB0E6"/><stop offset="0.6" stop-color="#B9CFF4" stop-opacity="0.6"/>
+  <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+ </radialGradient>
+ <linearGradient id="foldTop" gradientUnits="userSpaceOnUse" x1="310" y1="182" x2="320" y2="222">
+  <stop offset="0" stop-color="#F1F4FA"/><stop offset="0.3" stop-color="#BCC9E0"/>
+  <stop offset="0.65" stop-color="#8FA3C9"/><stop offset="1" stop-color="#7086B6"/>
+ </linearGradient>
+ <linearGradient id="foldBot" gradientUnits="userSpaceOnUse" x1="372" y1="292" x2="388" y2="334">
+  <stop offset="0" stop-color="#344D96"/><stop offset="0.5" stop-color="#5470B0"/>
+  <stop offset="1" stop-color="#7F9BD6"/>
+ </linearGradient>
+ <linearGradient id="crease" gradientUnits="userSpaceOnUse" x1="0" y1="180" x2="0" y2="225">
+  <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.9"/>
+ </linearGradient>
+ <radialGradient id="dot" cx="0.36" cy="0.32" r="0.72">
+  <stop offset="0" stop-color="#3FA6FF"/><stop offset="0.45" stop-color="#0A6CFD"/>
+  <stop offset="1" stop-color="#0143E6"/>
+ </radialGradient>
+ <linearGradient id="lUp" gradientUnits="userSpaceOnUse" x1="270" y1="178" x2="215" y2="256">
+  <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.7" stop-color="#F2F5FB"/>
+  <stop offset="1" stop-color="#D5DEEE"/>
+ </linearGradient>
+ <linearGradient id="lLo" gradientUnits="userSpaceOnUse" x1="210" y1="256" x2="282" y2="337">
+  <stop offset="0" stop-color="#BAC8E2"/><stop offset="0.55" stop-color="#CCD7EC"/>
+  <stop offset="1" stop-color="#93B6F6"/>
+ </linearGradient>
+ <linearGradient id="rUp" gradientUnits="userSpaceOnUse" x1="459" y1="215" x2="437" y2="231">
+  <stop offset="0" stop-color="#5CCBFF"/><stop offset="0.26" stop-color="#2FA6FE"/>
+  <stop offset="0.36" stop-color="#0C68FC"/><stop offset="1" stop-color="#0348F6"/>
+ </linearGradient>
+ <linearGradient id="rLo" gradientUnits="userSpaceOnUse" x1="475" y1="260" x2="415" y2="337">
+  <stop offset="0" stop-color="#0342F2"/><stop offset="0.6" stop-color="#0352F8"/>
+  <stop offset="1" stop-color="#0A5EFB"/>
+ </linearGradient>
+ <linearGradient id="word" gradientUnits="userSpaceOnUse" x1="0" y1="173" x2="0" y2="330">
+  <stop offset="0" stop-color="#FFFFFF"/><stop offset="0.45" stop-color="#F9FAFD"/>
+  <stop offset="1" stop-color="#DCE7F8"/>
+ </linearGradient>
+ <linearGradient id="kBlue" gradientUnits="userSpaceOnUse" x1="1078" y1="204" x2="1040" y2="246">
+  <stop offset="0" stop-color="#1A8EFF"/><stop offset="0.5" stop-color="#035AFB"/>
+  <stop offset="1" stop-color="#0836E4"/>
+ </linearGradient>
+ <linearGradient id="kEdge" gradientUnits="userSpaceOnUse" x1="1088" y1="204" x2="1049" y2="248">
+  <stop offset="0" stop-color="#6CC4FF" stop-opacity="0.6"/><stop offset="1" stop-color="#3D8BFF" stop-opacity="0"/>
+ </linearGradient>
+ <radialGradient id="ground" gradientUnits="userSpaceOnUse" cx="335" cy="372" r="150" gradientTransform="translate(335 372) scale(1 0.17) translate(-335 -372)">
+  <stop offset="0" stop-color="#1A4DFF" stop-opacity="0.85"/><stop offset="0.45" stop-color="#0B2FD8" stop-opacity="0.4"/>
+  <stop offset="1" stop-color="#05155F" stop-opacity="0"/>
+ </radialGradient>
+ <filter id="blur6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs><defs>
+ <linearGradient id="bgBase" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0" stop-color="#0A1638"/><stop offset="0.55" stop-color="#070D24"/><stop offset="1" stop-color="#030818"/>
+ </linearGradient>
+ <radialGradient id="bgGlow" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#1E6BFF" stop-opacity="0.34"/><stop offset="0.5" stop-color="#1240C8" stop-opacity="0.12"/>
+  <stop offset="1" stop-color="#0B1E70" stop-opacity="0"/>
+ </radialGradient>
+ <radialGradient id="gridFade" cx="0.5" cy="0.5" r="0.5">
+  <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+ </radialGradient>
+ <linearGradient id="streak" x1="0" y1="0" x2="1" y2="0">
+  <stop offset="0" stop-color="#3FA6FF" stop-opacity="0"/><stop offset="0.5" stop-color="#3FA6FF" stop-opacity="0.75"/>
+  <stop offset="1" stop-color="#3FA6FF" stop-opacity="0"/>
+ </linearGradient>
+</defs><g transform="translate(-183.00 -155.78) scale(1.00000)"><path fill="url(#lUp)" fill-rule="evenodd" d="M 263 175 L 296 180 L 234 256 L 200 256 Z"/><path fill="url(#lLo)" fill-rule="evenodd" d="M 200 256 L 234 256 L 296 332 L 263 337 Z"/><path fill="url(#rUp)" fill-rule="evenodd" d="M 400 180 L 430 175 L 487 256 L 453 256 Z"/><path fill="url(#rLo)" fill-rule="evenodd" d="M 453 256 L 487 256 L 430 337 L 400 332 Z"/><g clip-path="url(#sClip)"><rect x="280" y="170" width="135" height="170" fill="url(#sBase)"/><rect x="280" y="176" width="48" height="88" fill="url(#sBowlL)"/><rect x="380" y="255" width="35" height="85" fill="url(#sBowlR)"/><path fill="url(#foldTop)" fill-rule="evenodd" d="M 307 178 C 307 196 309 213 322 223 C 313 219 314 211 324 211 L 332 211 C 322 207 312 199 307 178 Z"/><path fill="url(#foldBot)" fill-rule="evenodd" d="M 376 289 C 384 296 388 312 390 338 C 381 321 373 306 360 299 L 370 299 C 378 299 383 294 376 289 Z"/><path d="M 307 178 C 307 196 309 213 322 223" fill="none" stroke="url(#crease)" stroke-width="0.9"/></g><circle cx="366" cy="193" r="12" fill="url(#dot)"/><circle cx="324" cy="318" r="12.5" fill="url(#dot)"/></g></svg>

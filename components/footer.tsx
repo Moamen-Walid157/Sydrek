@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { navLinks } from "@/lib/content";
+import { navLinks, services, socials } from "@/lib/content";
 import { Mark } from "@/components/mark";
+import { SocialLinks } from "@/components/social-links";
 
 export function Footer() {
   return (
@@ -9,18 +10,19 @@ export function Footer() {
         <div className="md:col-span-4">
           <Link href="/#top" className="flex items-center gap-3 font-display text-2xl font-bold tracking-[-0.04em]">
             <Mark size={48} />
-            SYDREK
+            sydrek
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
-            Software solutions, engineered for what&apos;s next. Precision infrastructure for teams who trust depth.
+            Websites, CRMs, ERPs, dashboards, and mobile apps — engineered for what&apos;s next.
           </p>
+          <SocialLinks className="mt-6" />
         </div>
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 md:col-span-8">
           <div>
             <p className="font-mono text-[11px] tracking-[0.16em] text-muted uppercase">Explore</p>
             <ul className="mt-4 grid gap-2 text-sm">
               {navLinks.map((link) => (
-                <li key={link.id}>
+                <li key={link.href}>
                   <Link href={link.href} className="text-muted hover:text-fg">
                     {link.label}
                   </Link>
@@ -36,18 +38,52 @@ export function Footer() {
           <div>
             <p className="font-mono text-[11px] tracking-[0.16em] text-muted uppercase">Services</p>
             <ul className="mt-4 grid gap-2 text-sm text-muted">
-              <li>Product platforms</li>
-              <li>Cloud & scale</li>
-              <li>Security</li>
-              <li>Data systems</li>
+              {services.map((service) => (
+                <li key={service.title}>{service.title}</li>
+              ))}
             </ul>
           </div>
           <div>
             <p className="font-mono text-[11px] tracking-[0.16em] text-muted uppercase">Contact</p>
             <ul className="mt-4 grid gap-2 text-sm">
               <li>
-                <a href="mailto:hello@sydrek.com" className="text-muted hover:text-fg">
-                  hello@sydrek.com
+                <a
+                  href={socials.phone}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted hover:text-fg"
+                >
+                  {socials.phoneLabel}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={socials.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted hover:text-fg"
+                >
+                  WhatsApp
+                </a>
+              </li>
+              <li>
+                <a
+                  href={socials.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted hover:text-fg"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a
+                  href={socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted hover:text-fg"
+                >
+                  Instagram
                 </a>
               </li>
               <li>
@@ -55,7 +91,6 @@ export function Footer() {
                   Start a project
                 </Link>
               </li>
-              <li className="text-muted">Remote-first</li>
             </ul>
           </div>
         </div>

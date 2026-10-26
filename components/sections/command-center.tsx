@@ -54,9 +54,9 @@ export function CommandCenter() {
   return (
     <section id="platform" className="shell py-20 md:py-28">
       <SectionHeading
-        index="01 · Platform"
+        index="01 · Dashboards"
         title="The control room, in glass."
-        text="A live reading of the estate: health, revenue, the threshold you are willing to scale to, and the people who can change it."
+        text="The kind of advanced dashboard we build: health, revenue, the threshold you scale to, and the people who can change it."
       />
 
       <motion.div
@@ -270,7 +270,7 @@ export function CommandCenter() {
           <Dialog.Content className="glass-strong fixed top-1/2 left-1/2 z-[100] w-[min(440px,calc(100%-2rem))] -translate-x-1/2 -translate-y-1/2 rounded-3xl p-6">
             <Dialog.Title className="font-display text-2xl tracking-[-0.03em]">New workspace</Dialog.Title>
             <Dialog.Description className="mt-2 text-sm text-muted">
-              Name the room. We&apos;ll stage it against the current estate.
+              Name the workspace. We&apos;ll set it up beside the product you already run.
             </Dialog.Description>
             <form
               className="mt-5 grid gap-3"

@@ -8,6 +8,7 @@ import { Menu, X } from "lucide-react";
 import { navLinks } from "@/lib/content";
 import { cn, ease } from "@/lib/utils";
 import { Mark } from "@/components/mark";
+import { SocialLinks } from "@/components/social-links";
 import { ThemeSwitch } from "@/components/theme-switch";
 
 export function Navbar() {
@@ -75,7 +76,7 @@ export function Navbar() {
       >
         <Link href="/#top" className="flex items-center gap-2.5 font-display text-lg font-bold tracking-[-0.03em]">
           <Mark size={scrolled ? 32 : 40} />
-          SYDREK
+          sydrek
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
@@ -86,7 +87,8 @@ export function Navbar() {
               className={cn(
                 "rounded-lg px-3 py-2 text-[13px] font-medium transition-colors",
                 overHero ? "text-white/70 hover:bg-white/10 hover:text-white" : "text-muted hover:bg-white/10 hover:text-fg",
-                pathname === "/" && active === link.id && (overHero ? "bg-white/10 text-white" : "bg-white/10 text-fg"),
+                ((pathname === "/" && active === link.id) || (link.id === "tools" && pathname.startsWith("/tools"))) &&
+                  (overHero ? "bg-white/10 text-white" : "bg-white/10 text-fg"),
               )}
             >
               {link.label}
@@ -134,9 +136,12 @@ export function Navbar() {
                 </motion.div>
               ))}
             </nav>
-            <Link href="/contact" className="btn btn-primary" onClick={() => setOpen(false)}>
-              Start a project
-            </Link>
+            <div className="grid gap-4">
+              <SocialLinks />
+              <Link href="/contact" className="btn btn-primary" onClick={() => setOpen(false)}>
+                Start a project
+              </Link>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

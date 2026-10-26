@@ -1,12 +1,29 @@
-import { Activity, Cloud, Database, Layers, Rocket, ShieldCheck } from "lucide-react";
+import {
+  Files,
+  Globe,
+  GraduationCap,
+  LayoutDashboard,
+  PanelsTopLeft,
+  Plus,
+  Search,
+  Smartphone,
+  Sparkles,
+  Users,
+  Workflow,
+} from "lucide-react";
 
 const items = [
-  { icon: Layers, label: "Platforms" },
-  { icon: Cloud, label: "Cloud" },
-  { icon: ShieldCheck, label: "Security" },
-  { icon: Database, label: "Data" },
-  { icon: Activity, label: "Observability" },
-  { icon: Rocket, label: "Launch" },
+  { icon: Globe, label: "Websites" },
+  { icon: PanelsTopLeft, label: "Landing pages" },
+  { icon: Users, label: "CRM" },
+  { icon: Workflow, label: "ERP" },
+  { icon: LayoutDashboard, label: "Dashboards" },
+  { icon: Search, label: "SEO / GEO" },
+  { icon: Sparkles, label: "AI / Automation" },
+  { icon: GraduationCap, label: "LMS" },
+  { icon: Files, label: "CMS" },
+  { icon: Smartphone, label: "Mobile apps" },
+  { icon: Plus, label: "+ 50 more" },
 ];
 
 export function Marquee() {

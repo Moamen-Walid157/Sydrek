@@ -6,7 +6,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { projects } from "@/lib/content";
 import { cn } from "@/lib/utils";
 
-const filters = ["All", "Platforms", "Product", "Brand", "Infrastructure"] as const;
+const filters = ["All", ...Array.from(new Set(projects.map((project) => project.tag)))] as const;
 
 export function WorkGrid() {
   const [filter, setFilter] = useState<(typeof filters)[number]>("All");
@@ -47,13 +47,13 @@ export function WorkGrid() {
             onClick={() => setOpen(project)}
             className="glass group overflow-hidden rounded-[28px] text-left"
           >
-            <div className="relative aspect-[16/10] overflow-hidden">
+            <div className="relative aspect-[2/1] overflow-hidden bg-[#070b1a]">
               <Image
                 src={project.image}
                 alt={project.alt}
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                className="object-contain transition-transform duration-700 group-hover:scale-[1.02]"
               />
             </div>
             <div className="p-5">
@@ -71,8 +71,9 @@ export function WorkGrid() {
           <Dialog.Content className="glass-strong fixed top-1/2 left-1/2 z-[100] grid max-h-[min(860px,calc(100%-2rem))] w-[min(920px,calc(100%-2rem))] -translate-x-1/2 -translate-y-1/2 overflow-auto rounded-[28px] md:grid-cols-2">
             {active && (
               <>
-                <div className="relative min-h-[240px]">
-                  <Image src={active.image} alt={active.alt} fill sizes="50vw" className="object-cover" />
+                <div className="flex items-end gap-3 bg-[#070b1a] p-3">
+                  <Image src={active.image} alt={active.alt} width={1024} height={494} className="h-auto min-w-0 flex-1" style={{ width: "100%", height: "auto" }} />
+                  <Image src={active.mobile} alt={active.mobileAlt} width={360} height={780} className="h-auto w-[28%] shrink-0" style={{ height: "auto" }} />
                 </div>
                 <div className="p-6 md:p-8">
                   <p className="font-mono text-[11px] tracking-[0.16em] text-[#2563ff] uppercase dark:text-[#22d3ee]">{active.tag}</p>

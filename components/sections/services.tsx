@@ -3,17 +3,36 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import { Activity, ArrowLeft, ArrowRight, Cloud, Database, Layers, Rocket, ShieldCheck } from "lucide-react";
+import {
+  ArrowLeft,
+  ArrowRight,
+  Files,
+  Globe,
+  GraduationCap,
+  LayoutDashboard,
+  PanelsTopLeft,
+  Plus,
+  Search,
+  Smartphone,
+  Sparkles,
+  Users,
+  Workflow,
+} from "lucide-react";
 import { services } from "@/lib/content";
 import { SectionHeading } from "@/components/section-heading";
 
 const icons = {
-  layers: Layers,
-  cloud: Cloud,
-  shield: ShieldCheck,
-  database: Database,
-  activity: Activity,
-  rocket: Rocket,
+  globe: Globe,
+  panels: PanelsTopLeft,
+  users: Users,
+  workflow: Workflow,
+  dashboard: LayoutDashboard,
+  search: Search,
+  spark: Sparkles,
+  learn: GraduationCap,
+  files: Files,
+  phone: Smartphone,
+  more: Plus,
 } as const;
 
 export function Services() {
@@ -44,9 +63,9 @@ export function Services() {
     <section id="services" className="py-20 md:py-28">
       <div className="shell">
         <SectionHeading
-          index="02 · Services"
-          title="Six ways the work shows up."
-          text="Drag the rail, or let it move. Each card is a practice we actually run — not a menu of buzzwords."
+          index="03 · Services"
+          title="Eleven on the rail."
+          text="Websites, systems, search, learning, and mobile. Drag the rail, or let it move — fifty more sit behind the last card."
         />
       </div>
       <div className="shell">
