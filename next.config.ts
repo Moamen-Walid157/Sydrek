@@ -8,10 +8,17 @@ const nextConfig: NextConfig = {
   },
   turbopack: {
     rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
-      },
+      "*.css": [
+        {
+          condition: { path: /[\\/]node_modules[\\/]/ },
+          type: "css",
+        },
+        {
+          condition: { not: { path: /[\\/]node_modules[\\/]/ } },
+          loaders: ["@tailwindcss/turbopack"],
+          as: "*.css",
+        },
+      ],
     },
   },
 };
